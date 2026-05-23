@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Zycomayura Info Tech Pvt Ltd</title>
+    <meta name="description" content="Explore our technical case studies and completed engineering projects for e-commerce, banking, logistics, healthcare, and digital promotion channels.">
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Frosted Glass Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-cubes"></i></div>
+                <div class="logo-text">
+                    <div class="logo-name">Zyco<span>mayura</span></div>
+                    <div class="logo-sub">Info Tech Pvt Ltd</div>
+                </div>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                
+                <div class="nav-dropdown">
+                    <a href="services.html" class="nav-link">Services <i class="fa fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="services.html#web-dev" class="dropdown-item"><i class="fa fa-code"></i> Web Development</a>
+                        <a href="services.html#mobile-apps" class="dropdown-item"><i class="fa fa-mobile-screen-button"></i> Mobile Apps</a>
+                        <a href="services.html#testing" class="dropdown-item"><i class="fa fa-bug"></i> Software Testing</a>
+                        <a href="services.html#marketing" class="dropdown-item"><i class="fa fa-bullhorn"></i> Digital Marketing</a>
+                        <a href="services.html#call-center" class="dropdown-item"><i class="fa fa-headset"></i> Call Center Services</a>
+                        <a href="services.html#data" class="dropdown-item"><i class="fa fa-database"></i> Data Management</a>
+                    </div>
+                </div>
+                
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                
+                <a href="contact.html" class="btn-cta btn-nav-cta">Get Free Quote</a>
+            </nav>
+
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header Hero -->
+    <section class="hero" style="min-height: 50vh; padding-top: calc(var(--header-height) + 60px); padding-bottom: 60px;">
+        <div class="hero-container" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-left-content">
+                <div class="hero-tag" style="margin: 0 auto 24px;">
+                    <i class="fa fa-briefcase"></i> Case Studies
+                </div>
+                <h1 class="hero-title" style="font-size: 3rem;">Our Custom <span>Engineering Portfolio</span></h1>
+                <p class="hero-desc" style="max-width: 800px; margin: 0 auto 20px;">Explore how we have engineered scalable platforms, protected financial codebases, and accelerated customer acquisition metrics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies / Portfolio Filter Section -->
+    <section class="section-bg-dark" style="border-top: 1px solid var(--color-border);">
+        <div class="portfolio-container">
+            <div class="portfolio-filters">
+                <button class="portfolio-filter-btn active" data-filter="all">Show All</button>
+                <button class="portfolio-filter-btn" data-filter="web">Web Dev</button>
+                <button class="portfolio-filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="portfolio-filter-btn" data-filter="qa">QA Testing</button>
+                <button class="portfolio-filter-btn" data-filter="marketing">Marketing</button>
+                <button class="portfolio-filter-btn" data-filter="operations">Call Center / Data</button>
+            </div>
+            
+            <div class="portfolio-gallery">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-media">
+                        <div class="portfolio-badge">Web Platform</div>
+                        <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-weight:700;"><i class="fa fa-shopping-cart" style="font-size:3.5rem; color:var(--color-accent-teal);"></i></div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-item-title" style="color: white;">SwiftCart E-Commerce</h4>
+                        <div class="portfolio-tech-list">
+                            <span class="portfolio-tech-badge">Next.js</span>
+                            <span class="portfolio-tech-badge">Node.js</span>
+                            <span class="portfolio-tech-badge">MongoDB</span>
+                        </div>
+                        <p style="font-size:0.85rem; color:var(--color-text-secondary); margin-bottom:12px;">Full checkout restructuring, catalog caching, and secure stripe card integrations.</p>
+                        <div class="portfolio-results"><i class="fa fa-chart-line"></i> +140% Sales Velocity Secured</div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-media">
+                        <div class="portfolio-badge">Mobile App</div>
+                        <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-weight:700;"><i class="fa fa-truck-fast" style="font-size:3.5rem; color:var(--color-accent-purple);"></i></div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-item-title" style="color: white;">Runners Logistics</h4>
+                        <div class="portfolio-tech-list">
+                            <span class="portfolio-tech-badge">Flutter</span>
+                            <span class="portfolio-tech-badge">Firebase</span>
+                            <span class="portfolio-tech-badge">Maps API</span>
+                        </div>
+                        <p style="font-size:0.85rem; color:var(--color-text-secondary); margin-bottom:12px;">Real-time shipment tracker, offline notifications, and optimized driver paths.</p>
+                        <div class="portfolio-results"><i class="fa fa-bolt"></i> 14 Min Average Delivery Time</div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="marketing">
+                    <div class="portfolio-media">
+                        <div class="portfolio-badge">Digital Marketing</div>
+                        <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-weight:700;"><i class="fa fa-magnifying-glass-chart" style="font-size:3.5rem; color:var(--color-accent-teal);"></i></div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-item-title" style="color: white;">Zycomayura Realty SEO Engine</h4>
+                        <div class="portfolio-tech-list">
+                            <span class="portfolio-tech-badge">SEO Audits</span>
+                            <span class="portfolio-tech-badge">Google Ads</span>
+                            <span class="portfolio-tech-badge">Copywriting</span>
+                        </div>
+                        <p style="font-size:0.85rem; color:var(--color-text-secondary); margin-bottom:12px;">Local map keyword stacking, custom landers writing, and lead tracking scripts.</p>
+                        <div class="portfolio-results"><i class="fa fa-user-plus"></i> +300% Inbound Leads Secured</div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="qa">
+                    <div class="portfolio-media">
+                        <div class="portfolio-badge">QA Testing</div>
+                        <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-weight:700;"><i class="fa fa-file-shield" style="font-size:3.5rem; color:var(--color-accent-purple);"></i></div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-item-title" style="color: white;">SafeBank Core Security QA</h4>
+                        <div class="portfolio-tech-list">
+                            <span class="portfolio-tech-badge">Playwright</span>
+                            <span class="portfolio-tech-badge">OWASP Scans</span>
+                            <span class="portfolio-tech-badge">Load Stress</span>
+                        </div>
+                        <p style="font-size:0.85rem; color:var(--color-text-secondary); margin-bottom:12px;">Simulating 50k simultaneous banking dashboard transactions to check memory leaks.</p>
+                        <div class="portfolio-results"><i class="fa fa-circle-check"></i> 100% Critical Vulnerabilities Patched</div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-media">
+                        <div class="portfolio-badge">Web Platform</div>
+                        <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-weight:700;"><i class="fa fa-square-h" style="font-size:3.5rem; color:var(--color-accent-teal);"></i></div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-item-title" style="color: white;">MedVitals Patient portal</h4>
+                        <div class="portfolio-tech-list">
+                            <span class="portfolio-tech-badge">React.js</span>
+                            <span class="portfolio-tech-badge">Python</span>
+                            <span class="portfolio-tech-badge">PostgreSQL</span>
+                        </div>
+                        <p style="font-size:0.85rem; color:var(--color-text-secondary); margin-bottom:12px;">HIPAA secure file storage, dynamic doctor schedules, and custom prescription logs.</p>
+                        <div class="portfolio-results"><i class="fa fa-check"></i> 100% HIPAA Standard Compliance</div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="operations">
+                    <div class="portfolio-media">
+                        <div class="portfolio-badge">Operations</div>
+                        <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-heading); font-weight:700;"><i class="fa fa-headset" style="font-size:3.5rem; color:var(--color-accent-purple);"></i></div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-item-title" style="color: white;">HyperDrive Support Hub</h4>
+                        <div class="portfolio-tech-list">
+                            <span class="portfolio-tech-badge">Customer Inbound</span>
+                            <span class="portfolio-tech-badge">CRM Integration</span>
+                            <span class="portfolio-tech-badge">Helpdesk</span>
+                        </div>
+                        <p style="font-size:0.85rem; color:var(--color-text-secondary); margin-bottom:12px;">Managing global 24/7 call centers with high first-contact ticket resolutions.</p>
+                        <div class="portfolio-results"><i class="fa fa-smile"></i> 94% Ticket First-Response Resolution</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standardized Call to Action Banner -->
+    <section class="section-bg-light" style="padding: 80px 0; background: radial-gradient(circle at 50% 50%, var(--color-primary-light) 0%, var(--color-primary) 100%); color: white;">
+        <div class="section-header" style="margin-bottom: 30px;">
+            <h2 class="section-title" style="color: white;">Let's Build Your Technology Success Story Together</h2>
+            <p class="section-desc">Consult with our engineering architects today for a comprehensive execution wireframe.</p>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <a href="contact.html" class="btn-primary">Start Your Custom Project</a>
+            <a href="contact.html" class="btn-secondary">Schedule Architecture Session</a>
+        </div>
+    </section>
+
+    <!-- Premium Corporate Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <a href="index.html" class="logo" style="margin-bottom:15px;">
+                    <div class="logo-icon"><i class="fa-solid fa-cubes"></i></div>
+                    <div class="logo-text">
+                        <div class="logo-name">Zyco<span>mayura</span></div>
+                        <div class="logo-sub">Info Tech Pvt Ltd</div>
+                    </div>
+                </a>
+                <p class="footer-desc">Professional corporate IT engineering, performance assurance, global outreach representation, and data cleaning pipelines designed to scale operations safely.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="footer-title">Main Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html#web-dev" class="footer-link">Web Engineering</a></li>
+                    <li><a href="services.html#mobile-apps" class="footer-link">Mobile Applications</a></li>
+                    <li><a href="services.html#testing" class="footer-link">Software Quality Assurance</a></li>
+                    <li><a href="services.html#marketing" class="footer-link">SEO &amp; SEM Marketing</a></li>
+                    <li><a href="services.html#call-center" class="footer-link">Global Call Centers</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="footer-title">Company</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html" class="footer-link">About Corporate</a></li>
+                    <li><a href="careers.html" class="footer-link">Careers &amp; Interns</a></li>
+                    <li><a href="blog.html" class="footer-link">Insights Blog</a></li>
+                    <li><a href="portfolio.html" class="footer-link">Client Portfolio</a></li>
+                    <li><a href="contact.html" class="footer-link">Get Free Quote</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="footer-title">Direct Contact</h4>
+                <div class="footer-contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Suite 450, Tech Hub Blvd,<br>Silicon Meadows, CA 94025</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+1 (800) 555-ZYCO</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>info@zycomayura.com</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zycomayura Info Tech Pvt Ltd. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms &amp; Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/18005559926" class="whatsapp-widget" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with a Technology Specialist</span>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
